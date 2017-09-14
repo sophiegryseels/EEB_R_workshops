@@ -1,0 +1,22 @@
+---
+title: "My first markdown"
+author: "Sophie Gryseels"
+date: "14 september 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Our first markdown for EEB workshop
+
+<!-- use html commenting syntax for comments outside the code block that you dont want to have appearing in the final markdown file -->
+
+<!-- let R studio do the comment syntax for you with shift cmd c -->
+
+
+```{r echo = FALSE}
+# echo means the code doesnt display on the final markdown file
+plot(x = iris$Sepal.Length, y = iris$Sepal.Width, xlab = "Sepal Length", ylab = 'Sepal Width', main = 'Iris measurements')
+```
